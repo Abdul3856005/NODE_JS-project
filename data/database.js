@@ -4,6 +4,6 @@ import mongoose from "mongoose";
  export const connectdb = () => {mongoose.connect(process.env.MONGOURI, {
     dbName: "backendapi"
 })
-    .then(() => console.log("Database Connected"))                                                                                                                              
+    .then((c) => console.log(`Database Connected with ${c.connection.host}`))                                                                                                                              
     .catch((e) => console.log(e));
 };  
