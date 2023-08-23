@@ -83,7 +83,7 @@ export const logout = (req, res) =>{
   })
   .json({
         success:true,
-      message : "Logout Successfully"
+      message : "Logout Successfully",
         user: req.user,
   });
 
